@@ -1,0 +1,57 @@
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+.FTR_FOOTER{
+    background: var(--black-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+.FTR_LNK_TEXT, .FTR_DIV_ICON{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.poppins-regular-LNK-TEXT, .poppins-regular-p-ftr-text{
+    text-decoration: none;
+    color: var(--white-color);
+    text-align: center;
+    text-wrap: wrap;
+    word-break: break-all;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+.poppins-regular-LNK-TEXT{
+    font-size: 14px;
+}
+.poppins-regular-p-ftr-text{
+    font-size: 12px;
+}
+.ICON{
+    margin: 10px;
+}
+@media screen and (max-width: 900px) {
+    .FTR_FOOTER{
+        height: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 250px;
+    }
+    .FTR_LNK_TEXT, .FTR_DIV_ICON, .FTR_LNK_DIV_TEXT{
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .poppins-regular-p-ftr-text{
+        word-break: keep-all;
+    }
+}

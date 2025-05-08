@@ -1,0 +1,126 @@
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+.WEL_SECTION_H12, .CPY_SEC_TEXT, .SEC_BTN_LNK{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.poppins-regular-WEL-SEC-H1, .poppins-regular-WEL-SEC-H2, .poppins-regular-NPMP-TEXT, .poppins-regular-WELCOME_DATA_P, .poppins-regular-WELCOME_DATA_SUM, .BTN_LNK_CLK {
+    text-align: center;
+    text-wrap: wrap;
+    word-break: break-all;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-regular-WEL-SEC-H1 {
+    font-size: 30px;
+}
+.poppins-regular-WEL-SEC-H2 {
+    font-size: 26px;
+}
+.CPY_DIV_TEXT {
+    border: 2px solid var(--black-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+.poppins-regular-NPMP-TEXT{
+    margin: 5px;
+    font-size: 12px;
+}
+.NPM-CPY-BTN{
+    border: 1px solid var(--black-color);
+    outline: none;
+    background: var(--black-color);
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.WELCOME_DATA_SEC{
+    margin: 40px 20px;
+    border: 2px solid var(--black-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.WELCOME_DATA_DIV{
+    margin: 10px;
+}
+.WELCOME_DATA_DIV{
+    border: 2px solid var(--black-color);
+    margin: 15px;
+    border-radius: 10px;
+}
+.WELCOME_DATA_DIV summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--black-color);
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+}
+.WELCOME_DATA_DIV .icon {
+    font-size: 18px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+.WELCOME_DATA_DIV .down-icon {
+    display: none;
+}
+.WELCOME_DATA_DIV[open] .right-icon {
+    display: none;
+}
+.WELCOME_DATA_DIV[open] .down-icon {
+    display: inline-block;
+}
+.poppins-regular-WELCOME_DATA_P, .poppins-regular-WELCOME_DATA_SUM {
+    text-align: justify;
+    font-size: 14px;
+}
+.poppins-regular-WELCOME_DATA_P{
+    margin: 10px;
+    word-break: keep-all;
+}
+.BTN_LNK_CLK{
+    text-decoration: none;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    background: var(--black-color);
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 500px) {
+    .poppins-regular-WEL-SEC-H2 {
+        font-size: 20px;
+    }
+}

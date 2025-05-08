@@ -1,0 +1,25 @@
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+.HDR_HD{
+    background: var(--black-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.poppins-regular-HDR-HD{
+    margin: 10px;
+    color: var(--white-color);
+    text-align: center;
+    text-wrap: wrap;
+    word-break: break-all;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
