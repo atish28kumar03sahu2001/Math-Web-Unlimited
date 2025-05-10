@@ -179,3 +179,56 @@ export const PackageMethods = [
         link: "nth-fibonacci-number",
     },
 ]
+
+export const ArithmeticExample = 
+`Operand Operator Operand = Result
+
+Syntax Example: A + B = C
+
+Input/Operand: A, B
+
+Operator: +
+
+Output: C
+
+Mathematical Example:
+
+Addition: 10 + 20 = 30
+
+Subtraction: 20 - 10 = 10
+
+Multiplication: 10 * 20 = 200
+
+Division: 20 / 10 = 2
+
+Modulo: 20 % 10 = 0`;
+
+export const ArithmeticJavaScript = 
+`import {arithmetic} from 'math-unlimited';
+
+console.log(arithmetic(10, 20, "Addition")); // 30
+
+console.log(arithmetic(20, 10, "Subtraction")); // 10
+
+console.log(arithmetic(10, 20, "Multiplication")); // 200
+
+console.log(arithmetic(20, 10, "Division")); // 2
+
+console.log(arithmetic(20, 10, "Modulo")); // 0
+
+console.log(arithmetic(150, 70, "addition")); // 220
+
+console.log(arithmetic(80, 120, "subtraction")); // -40
+
+console.log(arithmetic(140, 20, "multiplication")); // 2800
+
+console.log(arithmetic(250, 40, "division")); // 6.25
+
+console.log(arithmetic(230, 70, "modulo")); // 20`;
+
+export const ArithmeticReactJS = 
+`
+`;
+export const ArithmeticNextJS = 
+`
+`;

@@ -1,0 +1,53 @@
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+.AO_SEC_H1, .ART_P_DEF_AO, .AO_OL_PT, .AO_EX_SEC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.poppins-regular-AO_H1, .poppins-regular-AOP, .poppins-regular-LI {
+    color: var(--black-color);
+    text-align: justify;
+    text-wrap: wrap;
+    word-break: break-all;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-regular-AO_H1 {
+    margin: 10px;
+    font-size: 24px;
+}
+.poppins-regular-AOP {
+    word-break: keep-all;
+    margin: 10px;
+    font-size: 12px;
+}
+.poppins-regular-LI{
+    margin: 7px;
+    word-break: keep-all;
+}
+.SPA_AO{
+    font-weight: 600;
+}
+.AO_EX_SEC{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.AO_EX_SEC_CDE{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+@media screen and (max-width: 375px) {
+    .poppins-regular-AO_H1 {
+        font-size: 20px;
+    }    
+}

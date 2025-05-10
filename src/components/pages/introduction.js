@@ -30,7 +30,7 @@ export default function IntroductionPage() {
             </section>
             <section className="PACKAGE-METHODS-SEC">
                 {PackageMethods.map((method) => (
-                    <Link href={`/${method.link}`} className="LNK-PACK" key={method.id}>
+                    <Link href={`/${method.link}`} className="LNK-PACK" key={method.id} title={method.name}>
                         {method.name}
                     </Link>
                 ))}

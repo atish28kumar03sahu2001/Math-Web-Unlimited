@@ -1,0 +1,49 @@
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+.CODE_SEC_BOX{
+    border: 2px solid var(--black-color);
+    margin: 10px;
+    width: 400px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+.CPY_BTN_DIV{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.NPM-CPY-BTN{
+    border: none;
+    outline: none;
+    background: var(--black-color);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.poppins-regular-CODE_PRE {
+    margin: 10px;
+    text-align: justify;
+    text-wrap: wrap;
+    word-break: keep-all;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    overflow: scroll;
+}
+@media screen and (max-width: 500px) {
+    .CODE_SEC_BOX{
+        width: 300px;
+        height: 300px; 
+    }
+}
