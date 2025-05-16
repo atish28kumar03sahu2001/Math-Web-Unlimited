@@ -227,8 +227,40 @@ console.log(arithmetic(250, 40, "division")); // 6.25
 console.log(arithmetic(230, 70, "modulo")); // 20`;
 
 export const ArithmeticReactJS = 
-`
-`;
-export const ArithmeticNextJS = 
-`
-`;
+`'use client';
+import { useState } from "react";
+import { arithmetic } from "math-unlimited";
+import "../styles/arithmetic.css";
+export default function ArithmeticDemo () {
+    const [Res, setRes] = useState(0);
+    const HandleOperation = (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const Obj = Object.fromEntries(formData.entries());
+        console.log(Obj);
+        setRes(arithmetic(parseInt(Obj.IP1), parseInt(Obj.IP2), Obj.OPERATOR));
+        e.target.reset();
+        setTimeout(() => {
+            setRes(0);
+        }, 5000);
+    }
+    return (
+        <>
+            <section className="ARTH-DEMO-SEC">
+                <form onSubmit={HandleOperation}>
+                    <input type='text' placeholder='Enter Input Value1' name='IP1' />
+                    <input type='text' placeholder='Enter Input Value2' name='IP2' />
+                    <select name="OPERATOR">
+                        <option value={'ADDITION'}>Addition</option>
+                        <option value={'SUBTRACTION'}>Subtraction</option>
+                        <option value={'MULTIPLICATION'}>Multiplication</option>
+                        <option value={'DIVISION'}>Division</option>
+                        <option value={'MODULO'}>Modulo</option>
+                    </select>
+                    <input type='submit' value='Calculate' />
+                </form>
+                <p>{Res}</p>
+            </section>
+        </>
+    );
+}`;

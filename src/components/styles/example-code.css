@@ -1,49 +1,52 @@
 :root {
-    --black-color: #000000;
+    --black-color: #3a404d;
     --white-color: #ffffff;
 }
-.CODE_SEC_BOX{
-    border: 2px solid var(--black-color);
+.CODE_SEC_CODER {
+    width: 500px;
+    max-height: 400px;
     margin: 10px;
-    width: 400px;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 10px;
+    padding: 0;
+    overflow: auto;
+    box-sizing: border-box;
 }
-.CPY_BTN_DIV{
-    margin: 10px;
+.CODE_SEC_P_BTN {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-}
-.NPM-CPY-BTN{
-    border: none;
-    outline: none;
-    background: var(--black-color);
-    height: 30px;
-    width: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    cursor: pointer;
+    background-color: var(--black-color);
+    padding: 10px;
+    margin: 0;
 }
-.poppins-regular-CODE_PRE {
-    margin: 10px;
+.CODE_CODER {
+    margin: 0;
+    font-size: 12px;
+}
+.poppins-regular-PH1DATA {
+    color: var(--white-color);
     text-align: justify;
     text-wrap: wrap;
-    word-break: keep-all;
+    word-break: break-all;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 12px;
-    overflow: scroll;
+}
+.CODE_COPY_BTN {
+    border: 1px ;
+    outline: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 @media screen and (max-width: 500px) {
-    .CODE_SEC_BOX{
+    .CODE_SEC_CODER {
         width: 300px;
-        height: 300px; 
+        margin: 10px;
+        padding: 0;
+        overflow: scroll;
     }
 }
