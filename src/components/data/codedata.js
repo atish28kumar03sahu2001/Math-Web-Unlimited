@@ -9,36 +9,36 @@ export const DataArray = [
         head: "Number Theory",
         data: "Identify prime numbers, composite numbers, and factors of integers. Perform GCD (Greatest Common Divisor) and LCM (Least Common Multiple) calculations. Support for modular arithmetic and solving modular equations. Check properties of numbers, e.g., perfect numbers, Armstrong numbers, or palindromic numbers.",
     },
-    // {
-    //     id: 3,
-    //     head: "Geometry Operations",
-    //     data: "Calculate area and perimeter of 2D shapes like triangles, rectangles, circles, and polygons. Calculate surface area and volume of 3D shapes like cubes, spheres, cylinders, and cones. Find the centroid, circumcircle, or incircle of geometric figures. Compute angles, diagonals, and other geometric properties of polygons.",
-    // },
-    // {
-    //     id: 4,
-    //     head: "Sorting & Searching",
-    //     data: "Customizable sorting based on keys or criteria (e.g., ascending or descending). Support for searching in multidimensional arrays. Sorting and searching algorithms help in organizing and finding data efficiently, which is essential in both small and large-scale applications.",
-    // },
-    // {
-    //     id: 5,
-    //     head: "Co-ordinate Geometry",
-    //     data: "Compute the distance between two points and the midpoint of a line segment. Find the equation of a line (e.g., slope-intercept form, standard form). Identify intersections of lines, circles, or other curves. Handle transformations like translation, rotation, and scaling of points and shapes. Calculate slopes, angles between lines, and orientation of polygons.",
-    // },
-    // {
-    //     id: 6,
-    //     head: "Shape Concepts and Patterns",
-    //     data: "Generate and analyze patterns like Fibonacci sequences, Pascal's triangle, and geometric progressions. Study 2D shapes: properties of polygons, circle arcs, and sectors. Explore 3D concepts: Euler’s formula, vertices, edges, and faces of polyhedra. Generate tessellations and symmetry patterns for artistic or analytical purposes. Build interactive models for spiral patterns, fractals, and tiling algorithms.",
-    // },
-    // {
-    //     id: 7,
-    //     head: "Mathematical Operations",
-    //     data: "Perform symbolic computations like differentiation, integration, and polynomial manipulation. Solve algebraic equations and systems of linear equations. Handle matrix operations such as addition, multiplication, and inversion. Provide tools for statistical calculations, e.g., mean, median, mode, and standard deviation.",
-    // },
-    // {
-    //     id: 8,
-    //     head: "Efficient & Easy To Use",
-    //     data: "Streamlined interface for quick and intuitive operation. Well-documented functions and features with examples. Optimized algorithms ensure fast processing and scalability. Provides a user-friendly experience for both beginners and advanced users in mathematical computations.",
-    // },
+    {
+        id: 3,
+        head: "Geometry Operations",
+        data: "Calculate area and perimeter of 2D shapes like triangles, rectangles, circles, and polygons. Calculate surface area and volume of 3D shapes like cubes, spheres, cylinders, and cones. Find the centroid, circumcircle, or incircle of geometric figures. Compute angles, diagonals, and other geometric properties of polygons.",
+    },
+    {
+        id: 4,
+        head: "Sorting & Searching",
+        data: "Customizable sorting based on keys or criteria (e.g., ascending or descending). Support for searching in multidimensional arrays. Sorting and searching algorithms help in organizing and finding data efficiently, which is essential in both small and large-scale applications.",
+    },
+    {
+        id: 5,
+        head: "Co-ordinate Geometry",
+        data: "Compute the distance between two points and the midpoint of a line segment. Find the equation of a line (e.g., slope-intercept form, standard form). Identify intersections of lines, circles, or other curves. Handle transformations like translation, rotation, and scaling of points and shapes. Calculate slopes, angles between lines, and orientation of polygons.",
+    },
+    {
+        id: 6,
+        head: "Shape Concepts and Patterns",
+        data: "Generate and analyze patterns like Fibonacci sequences, Pascal's triangle, and geometric progressions. Study 2D shapes: properties of polygons, circle arcs, and sectors. Explore 3D concepts: Euler’s formula, vertices, edges, and faces of polyhedra. Generate tessellations and symmetry patterns for artistic or analytical purposes. Build interactive models for spiral patterns, fractals, and tiling algorithms.",
+    },
+    {
+        id: 7,
+        head: "Mathematical Operations",
+        data: "Perform symbolic computations like differentiation, integration, and polynomial manipulation. Solve algebraic equations and systems of linear equations. Handle matrix operations such as addition, multiplication, and inversion. Provide tools for statistical calculations, e.g., mean, median, mode, and standard deviation.",
+    },
+    {
+        id: 8,
+        head: "Efficient & Easy To Use",
+        data: "Streamlined interface for quick and intuitive operation. Well-documented functions and features with examples. Optimized algorithms ensure fast processing and scalability. Provides a user-friendly experience for both beginners and advanced users in mathematical computations.",
+    },
 ];
 export const Paragraph1 = "Welcome to math-unlimited — your all-in-one solution for high-performance mathematical computing in JavaScript and TypeScript. Whether you're a developer building complex applications, a student exploring advanced mathematics, or a researcher analyzing large datasets, math-unlimited equips you with a robust and intuitive API designed to make math effortless and accessible.";
 export const Paragraph2 = "At its core, math-unlimited is engineered for modularity and performance. You can import only the functions you need, ensuring your applications remain lightweight and efficient. From basic arithmetic to advanced topics like calculus, statistics, and number theory, the library offers an extensive set of well-documented tools, each carefully optimized for speed, accuracy, and consistency across platforms.";
@@ -260,6 +260,103 @@ export default function ArithmeticDemo () {
                     <input type='submit' value='Calculate' />
                 </form>
                 <p>{Res}</p>
+            </section>
+        </>
+    );
+}`;
+
+export const DivisionConcept = 
+`Dividend = (Quotient * Divisor) + Remainder
+Example: (21 * 7) + 3 = 150
+
+Divisor = (Dividend - Remainder) / Quotient
+Example: (150 - 3) / 21 = 7
+
+Remainder = Dividend - (Quotient * Divisor)
+Example: 150 - (21 * 7) = 3
+
+Quotient = (Dividend - Remainder) / Divisor
+Example: (150 - 3) / 7 = 21`;
+
+export const DivisionJavaScript = 
+`import {divisionOperation} from 'math-unlimited';
+
+console.log(divisionOperation("Quotient", 150, 3, 7)); // 21
+
+console.log(divisionOperation("Dividend", 21, 7, 3)); // 150
+
+console.log(divisionOperation("Divisor", 150, 21, 3)); // 7
+
+console.log(divisionOperation("Remainder", 150, 21, 7)); // 3`;
+
+export const DivisionReactJS = `'use client';
+import { useState } from "react";
+import { divisionOperation } from "math-unlimited";
+import "../styles/division.css";
+export default function DivisionDemo () {
+    const [Operation, setOperation] = useState("");
+    const [Placeholder, setPlaceholder] = useState({input1: "", input2: "", input3: ""});
+    const [Inputs, setInputs] = useState({input1: "", input2: "", input3: ""});
+    const [Result, setResult] = useState("");
+    const HandleInputChange = (event) => {
+        const { name, value } = event.target;
+        setInputs((prev) => ({ ...prev, [name]: value }));
+    }
+    const HandleOperationChange = (event) => {
+        const selectedOperation = event.target.value;
+        setOperation(selectedOperation);
+        const placeholderMap = {
+            quotient: { input1: "Enter Dividend Value", input2: "Enter Remainder Value", input3: "Enter Divisor Value", },
+            dividend: { input1: "Enter Quotient Value", input2: "Enter Divisor Value", input3: "Enter Remainder Value", },
+            divisor: { input1: "Enter Dividend Value", input2: "Enter Quotient Value", input3: "Enter Remainder Value", },
+            remainder: { input1: "Enter Dividend Value", input2: "Enter Quotient Value", input3: "Enter Divisor Value", },
+        };
+        setPlaceholder(placeholderMap[selectedOperation] || { input1: "", input2: "", input3: "" });
+    }
+    const HandleSubmit = (event) => {
+        event.preventDefault();
+        try {
+            const num1 = parseInt(Inputs.input1);
+            const num2 = parseInt(Inputs.input2);
+            const num3 = parseInt(Inputs.input3);
+            if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+                throw new Error("Please enter valid numeric values.");
+            }
+            const result = divisionOperation(Operation, num1, num2, num3);
+            setResult(result);
+        } catch (error) {
+            setResult((error).message);
+        }
+    }
+    return (
+        <>
+            <section>
+                <form onSubmit={HandleSubmit} className="PARENT_FRM">
+                    <div className="PFRM_1 PFRM">
+                        <input className="PFRM_IP" type="text" name="input1" value={Inputs.input1} onChange={HandleInputChange} placeholder={Placeholder.input1 || "Enter Input1 Value"} />
+                    </div>
+                    <div className="PFRM_2 PFRM">
+                        <input className="PFRM_IP" type="text" name="input2" value={Inputs.input2} onChange={HandleInputChange} placeholder={Placeholder.input2 || "Enter Input2 Value"} />
+                    </div>
+                    <div className="PFRM_3 PFRM">
+                        <input className="PFRM_IP" type="text" name="input3" value={Inputs.input3} onChange={HandleInputChange} placeholder={Placeholder.input3 || "Enter Input3 Value"} />
+                    </div>
+                    <div className="PFRM_4 PFRM">
+                        <select className="PFRM_IP" value={Operation} onChange={HandleOperationChange}>
+                            <option value="" hidden>Choose An Operation</option>
+                            <option value="dividend">Dividend</option>
+                            <option value="divisor">Divisor</option>
+                            <option value="quotient">Quotient</option>
+                            <option value="remainder">Remainder</option>
+                        </select>
+                    </div>
+                    <div className="PFRM_5 PFRM">
+                        <input className="PFRM_IP" type="submit" value="Result" />
+                    </div>
+                    <div className="PFRM_6 PFRM">
+                        <input className="PFRM_IP" value={Result} placeholder="Display The Result" readOnly />
+                    </div>
+                </form>
             </section>
         </>
     );

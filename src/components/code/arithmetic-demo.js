@@ -26,6 +26,7 @@ export default function ArithmeticDemo () {
                     <div className="FRM-DIV">
                         <div className="IPDIV">
                             <select name="OPERATOR" className="IP SELECT-IP">
+                                <option value="" hidden>Choose An Operation</option>
                                 <option value={'ADDITION'}>Addition</option>
                                 <option value={'SUBTRACTION'}>Subtraction</option>
                                 <option value={'MULTIPLICATION'}>Multiplication</option>
@@ -34,7 +35,7 @@ export default function ArithmeticDemo () {
                             </select>
                         </div>
                         <div className="IPDIV">
-                            <input type='submit' value='Calculate' className="IP" />
+                            <input className="IPDIV_SBMT" type='submit' value='Calculate' />
                         </div>
                     </div>
                 </form>
