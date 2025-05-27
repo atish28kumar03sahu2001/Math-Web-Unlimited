@@ -45,13 +45,13 @@ export default function Division() {
                 <div className='SEC_CODE_H1_SYNT-DIV'>
                     <h1 className='poppins-regular-CODEP'>JavaScript Code</h1>
                 </div>
-                <ExampleCode Code={DivisionJavaScript} H1data={"Division Concept"} />
+                <ExampleCode Code={DivisionJavaScript} H1data={"JavaScript Code"} />
             </section>
             <section className='SEC_CODE_H1_SYNT'>
                 <div className='SEC_CODE_H1_SYNT-DIV'>
                     <h1 className='poppins-regular-CODEP'>React.JS Code</h1>
                 </div>
-                <ExampleCode Code={DivisionReactJS} H1data={"Division Concept"} />
+                <ExampleCode Code={DivisionReactJS} H1data={"React.JS Code"} />
             </section>
             
         </>

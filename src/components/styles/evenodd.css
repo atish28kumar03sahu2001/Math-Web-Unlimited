@@ -1,0 +1,33 @@
+:root {
+    --black-color: #3a404d;
+    --white-color: #ffffff;
+}
+.EO_FRM {
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+}
+.EOIP {
+    margin: 10px;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    background: var(--white-color);
+    border-radius: 5px;
+}
+.EOBTN {
+    margin: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: var(--black-color);
+    cursor: pointer;
+    font-size: 14px;
+}

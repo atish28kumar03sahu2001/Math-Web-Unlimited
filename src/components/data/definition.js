@@ -15,3 +15,8 @@ export const Dividend_Definition = "The dividend is the number that is being div
 export const Divisor_Definition = "The divisor is the number by which the dividend is divided. It represents the size of each part or the number of parts the dividend is divided into. ";
 export const Quotient_Definition = "The quotient is the result of the division. It tells us how many times the divisor fits into the dividend or how many equal parts are formed. ";
 export const Remainder_Definition = "The remainder is the leftover part of the dividend that cannot be evenly divided by the divisor. It is always less than the divisor. ";
+
+export const EvenOddTitle = "Even Odd Number";
+export const EvenOddDefinition = "An even number is any integer that is exactly divisible by 2, meaning when you divide the number by 2, there is no remainder. These numbers always end with 0, 2, 4, 6, or 8 in the units place. On the other hand, an odd number is an integer that is not divisible by 2. When divided by 2, odd numbers leave a remainder of 1. These numbers end with 1, 3, 5, 7, or 9 in the units place. Even and odd numbers are basic concepts in mathematics and help in number classification, pattern recognition, and many logical problems.";
+export const EvenNumbers = "2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,...";
+export const OddNumbers = "1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,..."

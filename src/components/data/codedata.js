@@ -91,7 +91,7 @@ export const PackageMethods = [
     {
         id: 3,
         name: "Even & Odd Number",
-        link: "even-odd-number",
+        link: "even-odd",
     },
     {
         id: 4,
@@ -356,6 +356,45 @@ export default function DivisionDemo () {
                     <div className="PFRM_6 PFRM">
                         <input className="PFRM_IP" value={Result} placeholder="Display The Result" readOnly />
                     </div>
+                </form>
+            </section>
+        </>
+    );
+}`;
+
+export const EvenOddNumberJavaScript = 
+`import {evenOdd} from 'math-unlimited';
+console.log(evenOdd(122)); // Even Number
+console.log(evenOdd(177)); // Odd Number
+console.log(evenOdd(1024)); // Even Number
+console.log(evenOdd(3049)); // Odd Number`;
+
+export const EvenOddNumberReactJS = 
+`'use client';
+import { useState } from "react";
+import { evenOdd } from "math-unlimited";
+export default function EvenOddDemo () {
+    const [res, setRes] = useState("");
+    const HandleEvenOddNumber = (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const inputvalue = formData.get('input1');
+
+        const result = evenOdd(Number(inputvalue));
+        setRes(result);
+
+        setTimeout(() => {
+            setRes('');
+            e.target.reset();
+        }, 2000);
+    }
+    return (
+        <>
+            <section>
+                <form onSubmit={HandleEvenOddNumber}>
+                    <input type="text" id="input1" name="input1" placeholder="Enter Integer Value" />
+                    <input type="submit" value="Result" />
+                    <input readOnly value={res} placeholder="Display Result" />
                 </form>
             </section>
         </>
